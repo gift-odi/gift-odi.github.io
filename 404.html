@@ -1,0 +1,37 @@
+---
+permalink: /404.html
+---
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- This stores the URL the user was attempting to go to in sessionStorage,
+    and then redirects all 404 responses to the app’s index.html page -->
+    <!-- See http://www.backalleycoder.com/2016/05/13/sghpa-the-single-page-app-hack-for-github-pages/ -->
+    <script>
+      sessionStorage.redirect = location.href;
+    </script>
+    <meta http-equiv="refresh" content="0;URL='https://gift-odi.github.io'"></meta>
+  </head>
+  <body>
+  </body>
+</html>
+
+<!-- 
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Gift Odiete</title>
+    <base href="/" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <app-root></app-root>
+  </body>
+</html> -->
