@@ -11,8 +11,18 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet" />
+    <script>
+      // See http://www.backalleycoder.com/2016/05/13/sghpa-the-single-page-app-hack-for-github-pages/
+      (function() {
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect != location.href) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
   <link rel="stylesheet" href="styles.b66e0e28b742b6333a1b.css"></head>
   <body>
     <app-root></app-root>
-  <script type="text/javascript" src="runtime.26209474bfa8dc87a77c.js"></script><script type="text/javascript" src="es2015-polyfills.b0657154bc33c6ff11ae.js" nomodule></script><script type="text/javascript" src="polyfills.cb8bde2ddd867b4f8efa.js"></script><script type="text/javascript" src="main.8cd078b5a015ae63e46b.js"></script></body>
+  <script type="text/javascript" src="runtime.26209474bfa8dc87a77c.js"></script><script type="text/javascript" src="es2015-polyfills.b0657154bc33c6ff11ae.js" nomodule></script><script type="text/javascript" src="polyfills.cb8bde2ddd867b4f8efa.js"></script><script type="text/javascript" src="main.cd294e1065938090176c.js"></script></body>
 </html>
